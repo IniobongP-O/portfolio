@@ -141,11 +141,17 @@ body {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+  box-shadow:
+    0 0 5px cyan,
+    0 0 25px cyan;
 }
 
 .btn-box:hover {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+  box-shadow:
+    0 0 5px cyan,
+    0 0 25px cyan,
+    0 0 50px cyan,
+    0 0 100px cyan,
     0 0 200px cyan;
 }
 
@@ -222,8 +228,12 @@ body {
   font-weight: 13px;
   border-right: 10px;
   border-radius: 20px;
-  transition: background-color 0.5s, transform 0.5s;
-  box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+  transition:
+    background-color 0.5s,
+    transform 0.5s;
+  box-shadow:
+    1px 1px 20px #012290f7,
+    1px 1px 40px #0053b8f7;
 }
 
 .services-list div i {
@@ -258,11 +268,17 @@ body {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+  box-shadow:
+    0 0 5px cyan,
+    0 0 25px cyan;
 }
 
 .read:hover {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+  box-shadow:
+    0 0 5px cyan,
+    0 0 25px cyan,
+    0 0 50px cyan,
+    0 0 100px cyan,
     0 0 200px cyan;
 }
 
@@ -277,7 +293,7 @@ section {
 
 .container1 {
   width: 600px;
-  height: 500px;
+  min-height: 500px;
   padding: 75px 90px;
   margin-left: 120px;
 }
@@ -294,7 +310,7 @@ section {
 }
 
 .Technical-bars .bar {
-  margin-top: 40px 0;
+  margin: 40px 0;
 }
 
 .Technical-bars .bar:first-child {
@@ -323,7 +339,7 @@ section {
   height: 5px;
   background-color: #000;
   animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
-  transform: scaleX (0);
+  transform: scaleX(0);
   transform-origin: left;
 }
 
@@ -339,7 +355,7 @@ section {
   border-radius: 10px;
   background-color: #0ef;
   animation: animate 1s 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
-  transform: scaleX (0);
+  transform: scaleX(0);
   transform-origin: left;
 }
 
@@ -732,11 +748,17 @@ form textarea {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+  box-shadow:
+    0 0 5px cyan,
+    0 0 25px cyan;
 }
 
 .contact-form form .send:hover {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+  box-shadow:
+    0 0 5px cyan,
+    0 0 25px cyan,
+    0 0 50px cyan,
+    0 0 100px cyan,
     0 0 200px cyan;
 }
 
@@ -803,5 +825,66 @@ form textarea {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .header {
+    padding: 20px 5%;
+  }
+  .home {
+    padding: 70px 5% 0;
+  }
+  .container1 {
+    width: 100%;
+    margin-left: 0;
+    padding: 50px 5%;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about-img img {
+    padding-bottom: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  .home-content h1 {
+    font-size: 40px;
+  }
+  .home-content h3 {
+    font-size: 24px;
+  }
+  .about-text h2 {
+    font-size: 45px;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .contact-text h2 {
+    font-size: 60px;
+  }
+  .contact-form form input,
+  form textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    display: none; /* In a real project, we'd add a hamburger menu */
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .home-content h1 {
+    font-size: 32px;
   }
 }
